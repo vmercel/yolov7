@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "programming-languages-api",
+  "builds": [
+    { "src": "srx/index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/src/index.js" }
+  ]
+}
